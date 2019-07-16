@@ -1,0 +1,178 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{084635A6-E6CD-4FFE-BBA8-C840D103CEED}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Nightmare_s_Mod</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Terraria">
+      <HintPath>D:\SteamLibrary\steamapps\common\Terraria\Terraria.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="build.txt" />
+    <Content Include="description.txt" />
+    <Content Include="Items\Armor\FaroziteArmor\FaroziteChestplate.png" />
+    <Content Include="Items\Armor\FaroziteArmor\FaroziteChestplate_Arms.png" />
+    <Content Include="Items\Armor\FaroziteArmor\FaroziteChestplate_Body.png" />
+    <Content Include="Items\Armor\FaroziteArmor\FaroziteChestplate_Female.png" />
+    <Content Include="Items\Armor\FaroziteArmor\FaroziteHelmet.png" />
+    <Content Include="Items\Armor\FaroziteArmor\FaroziteHelmet_Head.png" />
+    <Content Include="Items\Armor\FaroziteArmor\FaroziteLeggings.png" />
+    <Content Include="Items\Armor\FaroziteArmor\FaroziteLeggings_Legs.png" />
+    <Content Include="Items\Armor\NightmariumArmor\NightmariumChestplate.png" />
+    <Content Include="Items\Armor\NightmariumArmor\NightmariumChestplate_Arms.png" />
+    <Content Include="Items\Armor\NightmariumArmor\NightmariumChestplate_Body.png" />
+    <Content Include="Items\Armor\NightmariumArmor\NightmariumChestplate_Female.png" />
+    <Content Include="Items\Armor\NightmariumArmor\NightmariumHelmet.png" />
+    <Content Include="Items\Armor\NightmariumArmor\NightmariumHelmet_Head.png" />
+    <Content Include="Items\Armor\NightmariumArmor\NightmariumLeggings.png" />
+    <Content Include="Items\Armor\NightmariumArmor\NightmariumLeggings_Legs.png" />
+    <Content Include="Items\Armor\PyroziumArmor\PyroziumChestplate.png" />
+    <Content Include="Items\Armor\PyroziumArmor\PyroziumChestplate_Arms.png" />
+    <Content Include="Items\Armor\PyroziumArmor\PyroziumChestplate_Body.png" />
+    <Content Include="Items\Armor\PyroziumArmor\PyroziumChestplate_Female.png" />
+    <Content Include="Items\Armor\PyroziumArmor\PyroziumGreaves.png" />
+    <Content Include="Items\Armor\PyroziumArmor\PyroziumGreaves_Legs.png" />
+    <Content Include="Items\Armor\PyroziumArmor\PyroziumHelmet.png" />
+    <Content Include="Items\Armor\PyroziumArmor\PyroziumHelmet_Head.png" />
+    <Content Include="Items\Materials\Bars\FaroziteBar.png" />
+    <Content Include="Items\Materials\Bars\NightmariumBar.png" />
+    <Content Include="Items\Materials\Bars\PyroziumBar.png" />
+    <Content Include="Items\Placeables\Blocks\Ores\Farozite.png" />
+    <Content Include="Items\Placeables\Blocks\Ores\Flarium.png" />
+    <Content Include="Items\Placeables\Blocks\Ores\Nightmarium.png" />
+    <Content Include="Items\Weapons\Magic\Dreadstorm.png" />
+    <Content Include="Items\Weapons\Melee\Bat.png" />
+    <Content Include="Items\Weapons\Melee\Bloodbath.png" />
+    <Content Include="Items\Weapons\Melee\Corona.png" />
+    <Content Include="Items\Weapons\Melee\FireHatchet.png" />
+    <Content Include="Items\Weapons\Melee\Laberd.png" />
+    <Content Include="Items\Weapons\Melee\PyroziumBlade.png" />
+    <Content Include="Items\Weapons\Melee\Repummel.png" />
+    <Content Include="Items\Weapons\Melee\Royalty.png" />
+    <Content Include="Items\Weapons\Melee\Shatter.png" />
+    <Content Include="Items\Weapons\Melee\Shrike.png" />
+    <Content Include="Items\Weapons\Melee\Soulrapier.png" />
+    <Content Include="Items\Weapons\Melee\StarMania.png" />
+    <Content Include="Items\Weapons\Melee\TheNightmare.png" />
+    <Content Include="Items\Weapons\Ranged\Baseball.png" />
+    <Content Include="obj\x86\Debug\Nightmare%27s Mod.csproj.FileListAbsolute.txt" />
+    <Content Include="Projectiles\BaseballProjectile.png" />
+    <Content Include="Projectiles\BloodbathProjectile.png" />
+    <Content Include="Projectiles\CoronaProjectile.png" />
+    <Content Include="Projectiles\DreadstormCloud.png" />
+    <Content Include="Projectiles\NightmareBolt.png" />
+    <Content Include="Projectiles\NightmareProjectile.png" />
+    <Content Include="Tiles\FaroziteTile.png" />
+    <Content Include="Tiles\FlariumTile.png" />
+    <Content Include="Tiles\NightmariumTile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dusts\NightmariumDust.cs" />
+    <Compile Include="Items\Armor\FaroziteArmor\FaroziteChestplate.cs" />
+    <Compile Include="Items\Armor\FaroziteArmor\FaroziteHelmet.cs" />
+    <Compile Include="Items\Armor\FaroziteArmor\FaroziteLeggings.cs" />
+    <Compile Include="Items\Armor\NightmariumArmor\NightmariumChestplate.cs" />
+    <Compile Include="Items\Armor\NightmariumArmor\NightmariumHelmet.cs" />
+    <Compile Include="Items\Armor\NightmariumArmor\NightmariumLeggings.cs" />
+    <Compile Include="Items\Armor\PyroziumArmor\PyroziumChestplate.cs" />
+    <Compile Include="Items\Armor\PyroziumArmor\PyroziumGreaves.cs" />
+    <Compile Include="Items\Armor\PyroziumArmor\PyroziumHelmet.cs" />
+    <Compile Include="Items\Materials\Bars\FaroziteBar.cs" />
+    <Compile Include="Items\Materials\Bars\NightmariumBar.cs" />
+    <Compile Include="Items\Materials\Bars\PyroziumBar.cs" />
+    <Compile Include="Items\Placeables\Blocks\Ores\Farozite.cs" />
+    <Compile Include="Items\Placeables\Blocks\Ores\Flarium.cs" />
+    <Compile Include="Items\Placeables\Blocks\Ores\Nightmarium.cs" />
+    <Compile Include="Items\Weapons\Magic\Dreadstorm.cs" />
+    <Compile Include="Items\Weapons\Melee\Bat.cs" />
+    <Compile Include="Items\Weapons\Melee\Bloodbath.cs" />
+    <Compile Include="Items\Weapons\Melee\Corona.cs" />
+    <Compile Include="Items\Weapons\Melee\FireHatchet.cs" />
+    <Compile Include="Items\Weapons\Melee\PyroziumBlade.cs" />
+    <Compile Include="Items\Weapons\Melee\Shatter.cs" />
+    <Compile Include="Items\Weapons\Melee\Shrike.cs" />
+    <Compile Include="Items\Weapons\Melee\Laberd.cs" />
+    <Compile Include="Items\Weapons\Melee\Repummel.cs" />
+    <Compile Include="Items\Weapons\Melee\Soulrapier.cs" />
+    <Compile Include="Items\Weapons\Melee\Royalty.cs" />
+    <Compile Include="Items\Weapons\Melee\TheNightmare.cs" />
+    <Compile Include="Items\Weapons\Ranged\Baseball.cs" />
+    <Compile Include="Items\Weapons\Melee\StarMania.cs" />
+    <Compile Include="NightmaresMod.cs" />
+    <Compile Include="Projectiles\BaseballProjectile.cs" />
+    <Compile Include="Projectiles\BloodbathProjectile.cs" />
+    <Compile Include="Projectiles\CoronaProjectile.cs" />
+    <Compile Include="Projectiles\DreadstormCloud.cs" />
+    <Compile Include="Projectiles\NightmareBolt.cs" />
+    <Compile Include="Projectiles\NightmareProjectile.cs" />
+    <Compile Include="Projectiles\StarManiaProjectile.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="Tiles\FaroziteTile.cs" />
+    <Compile Include="Tiles\FlariumTile.cs" />
+    <Compile Include="Tiles\NightmariumTile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\NightmaresMod\v15\.suo" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\x86\Debug\Nightmare%27s Mod.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\x86\Debug\Nightmare%27s Mod.csprojAssemblyReference.cache" />
+    <None Include="obj\x86\Release\Nightmare%27s Mod.csproj.CoreCompileInputs.cache" />
+    <None Include="Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\Nightmare%27s Mod\v15\" />
+    <Folder Include="bin\Debug\" />
+    <Folder Include="bin\Release\" />
+    <Folder Include="Items\Accessories\" />
+    <Folder Include="Items\Tools\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\x86\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
