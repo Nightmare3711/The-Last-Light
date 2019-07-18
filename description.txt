@@ -6,26 +6,37 @@ You can also contact me through Reddit by using my ID "u/NightmarePhoenix2017" o
 
 And please, if you can, donate to my Patreon at https://www.patreon.com/Nightmare3711
 
+View the Trello board for the project: https://trello.com/b/kHQcmS5F/nightmares-tmod
+
 Version updates:
+
+18/07/19 | Ver. 0.1.16:
+- Introduced Redtide Ore, Bar, Pickaxe, Axe, and Hammer
+- Introduced "Nightmare's Wings", which allows the wearer to fly for up to 60 seconds
+
+17/07/19 | Ver. 0.1.15:
+- Introduced Celestium Pickaxe and Celestium Hamaxe
 
 16/07/19 | Ver. 0.1.14:
 - Added mod icon!
+- Introduced Celestium Ore and Celestium Bar (Celestium armor set coming soon)
+- Introduced tools for the three original ores (Nightmarium Pickaxe, Nightmarium Hamaxe, Farozite Pickaxe, Farozite Hamaxe, Pyronium Pickaxe Axe, and Pyronium Hammer)
 
 15/07/19
 - Mod published on tModLoader!
 Ver: 0.1.13:
-- Changed all instances of Flarium to Pyrozium.
-- Introduced Nightmarium, Pyrozium, and Farozite bars, which craft the corresponding armor sets now.
-- Introduced the "Pyrozium Blade", which will soon inflict a strong fire debuff.
+- Changed all instances of Flarium to Pyronium (Including in the description)
+- Introduced Nightmarium, Pyronium, and Farozite bars, which craft the corresponding armor sets now.
+- Introduced the "", which will soon inflict a strong fire debuff.
 - Used the post on TCF as the homepage for the mod.
 
 14/07/19 | Ver. 0.1.12:
-- Introduced Nightmarium, Flarium, and Farozite brick (Walls coming soon!)
-- Introduced Flarium armor
-- Changed the names of Farozite, Flarium, and Nightmarium to have "Ore" at the end.
+- Introduced Nightmarium, Pyronium, and Farozite brick (Walls coming soon!)
+- Introduced Pyronium armor
+- Changed the names of Farozite, Pyronium, and Nightmarium to have "Ore" at the end.
 
 13/07/19 | Ver 0.1.11:
-- Introduced Nightmarium and Farozium armor, both of which will do a lot of things down the line. (Flarium armor coming soon!)
+- Introduced Nightmarium and Farozite armor, both of which will do a lot of things down the line. (Flarium armor coming soon!)
 
 12/07/19 | Ver 0.1.10:
 - Introduced the "Laberd", "Royalty", "Repummel", and "Shrike", all of which are simple blades that will be obtained various different ways. (Many more coming soon!)
