@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -48,6 +49,8 @@
     <Content Include="build.txt" />
     <Content Include="description.txt" />
     <Content Include="icon.png" />
+    <Content Include="Items\Ammo\Arrows\NightmariumArrow.png" />
+    <Content Include="Items\Ammo\Arrows\SpectralArrow.png" />
     <Content Include="Items\Armor\FaroziteArmor\FaroziteChestplate.png" />
     <Content Include="Items\Armor\FaroziteArmor\FaroziteChestplate_Arms.png" />
     <Content Include="Items\Armor\FaroziteArmor\FaroziteChestplate_Body.png" />
@@ -101,6 +104,7 @@
     <Content Include="Items\Weapons\Melee\Bat.png" />
     <Content Include="Items\Weapons\Melee\Bloodbath.png" />
     <Content Include="Items\Weapons\Melee\Corona.png" />
+    <Content Include="Items\Weapons\Melee\FaroziteBlade.png" />
     <Content Include="Items\Weapons\Melee\FireHatchet.png" />
     <Content Include="Items\Weapons\Melee\Laberd.png" />
     <Content Include="Items\Weapons\Melee\Pyromania.png" />
@@ -109,6 +113,7 @@
     <Content Include="Items\Weapons\Melee\Shatter.png" />
     <Content Include="Items\Weapons\Melee\Shrike.png" />
     <Content Include="Items\Weapons\Melee\Soulrapier.png" />
+    <Content Include="Items\Weapons\Melee\Spectrum.png" />
     <Content Include="Items\Weapons\Melee\StarMania.png" />
     <Content Include="Items\Weapons\Melee\TheNightmare.png" />
     <Content Include="Items\Weapons\Ranged\Baseball.png" />
@@ -119,6 +124,8 @@
     <Content Include="Projectiles\DreadstormCloud.png" />
     <Content Include="Projectiles\NightmareBolt.png" />
     <Content Include="Projectiles\NightmareProjectile.png" />
+    <Content Include="Projectiles\NightmariumArrowProjectile.png" />
+    <Content Include="Projectiles\SpectralArrowProjectile.png" />
     <Content Include="Projectiles\StarManiaProjectile.png" />
     <Content Include="Tiles\Bricks\FaroziteBrickTile.png" />
     <Content Include="Tiles\Bricks\FaroziteSmoothTile.png" />
@@ -130,6 +137,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dusts\NightmariumDust.cs" />
+    <Compile Include="Items\Ammo\Arrows\NightmariumArrow.cs" />
+    <Compile Include="Items\Ammo\Arrows\SpectralArrow.cs" />
     <Compile Include="Items\Armor\FaroziteArmor\FaroziteChestplate.cs" />
     <Compile Include="Items\Armor\FaroziteArmor\FaroziteHelmet.cs" />
     <Compile Include="Items\Armor\FaroziteArmor\FaroziteLeggings.cs" />
@@ -163,6 +172,7 @@
     <Compile Include="Items\Weapons\Melee\Bat.cs" />
     <Compile Include="Items\Weapons\Melee\Bloodbath.cs" />
     <Compile Include="Items\Weapons\Melee\Corona.cs" />
+    <Compile Include="Items\Weapons\Melee\FaroziteBlade.cs" />
     <Compile Include="Items\Weapons\Melee\FireHatchet.cs" />
     <Compile Include="Items\Weapons\Melee\Pyromania.cs" />
     <Compile Include="Items\Weapons\Melee\Shatter.cs" />
@@ -171,6 +181,7 @@
     <Compile Include="Items\Weapons\Melee\Repummel.cs" />
     <Compile Include="Items\Weapons\Melee\Soulrapier.cs" />
     <Compile Include="Items\Weapons\Melee\Royalty.cs" />
+    <Compile Include="Items\Weapons\Melee\Spectrum.cs" />
     <Compile Include="Items\Weapons\Melee\TheNightmare.cs" />
     <Compile Include="Items\Weapons\Ranged\Baseball.cs" />
     <Compile Include="Items\Weapons\Melee\StarMania.cs" />
@@ -181,6 +192,8 @@
     <Compile Include="Projectiles\DreadstormCloud.cs" />
     <Compile Include="Projectiles\NightmareBolt.cs" />
     <Compile Include="Projectiles\NightmareProjectile.cs" />
+    <Compile Include="Projectiles\NightmariumArrowProjectile.cs" />
+    <Compile Include="Projectiles\SpectralArrowProjectile.cs" />
     <Compile Include="Projectiles\StarManiaProjectile.cs" />
     <Compile Include="Properties\Settings.Designer.cs" />
     <Compile Include="Tiles\Bricks\FaroziteBrickTile.cs" />
@@ -207,6 +220,12 @@
     <Folder Include="bin\Debug\" />
     <Folder Include="bin\Release\" />
     <Folder Include="Items\Accessories\Wings\" />
+    <Folder Include="Items\Ammo\Bullets\" />
+    <Folder Include="Items\Armor\CelestiumArmor\" />
+    <Folder Include="Items\Armor\RedtideArmor\" />
+    <Folder Include="NPCs\Bosses\" />
+    <Folder Include="NPCs\Hostile\" />
+    <Folder Include="NPCs\Town\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="obj\x86\Debug\TempPE\" />
   </ItemGroup>
