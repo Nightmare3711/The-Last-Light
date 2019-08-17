@@ -1,0 +1,2 @@
+C:\Users\admin\Documents\My Games\Terraria\ModLoader\Mod Sources\NightmaresMod\obj\x86\Debug\Nightmare's Mod.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\My Games\Terraria\ModLoader\Mod Sources\NightmaresMod\obj\x86\Debug\Nightmare's Mod.csprojAssemblyReference.cache
