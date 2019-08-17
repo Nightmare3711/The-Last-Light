@@ -1,92 +1,24 @@
 This is a Work In Progress (W.I.P.) mod created by me, [c/460da2: Nightmare3711], that adds a bunch of fun stuff to Terraria.  
 
-You can contact me on Discord using my ID "Nightmare3711#9544" or through my server at https://discord.gg/Rb62Cvz  
+- - - INFO - - -
+Discord: https://discord.gg/TSWGjUc
+Trello Board: https://trello.com/b/kHQcmS5F/nightmares-tmod
+Terraria Community Forums Post: https://forums.terraria.org/index.php?threads/my-w-i-p-mod-nightmares-tmod-is-now-on-tmodloader.81324/
 
-You can also contact me through Reddit by using my ID "u/NightmarePhoenix2017" or through my subreddit at https://www.reddit.com/r/CelticEntertainment/  
 
-View the Trello board for the project: https://trello.com/b/kHQcmS5F/nightmares-tmod  
 
-You can also see the mod on Github, if you're interested: https://github.com/Nightmare3711/NightmaresTMod  
+Latest update:  
 
-And please, if you can, donate to my Patreon at https://www.patreon.com/Nightmare3711  
+15/08/19 | Ver. 0.2.10:
+- Fixed the color of Farozite on the map
+- Introduced Redtide Brick
+- Changed the texture of every ore brick except Nightmarium
+- Introduced "Celestium Blade"
+- Changed the texture of the "Pyrotome" as well as various tools.
+- Fixed/adjusted many of the recipes so that they make more sense.
+- Squashed a few smaller bugs with a book.
 
-Version updates:  
-
-21/07/19 | Ver. 0.1.19:
-- Made some sprite changes (Certain items look better now)
-- Fixed the female armor variants so that they appear in-game
-- Made the Nightmarium armor protect against almost every debuff
-- Made the Farozite and Pyronium armor sets immune to certain debuffs
-
-20/07/19 | Ver. 0.1.18:
-- Introduced Nightmarium Arrows  
-- Introduced Farozite Blade
-- Introduced Pyrowood
-
-19/07/19 | Ver. 0.1.17:
-- Introduced Spectral Arrows.  
-
-18/07/19 | Ver. 0.1.16:
-- Introduced Redtide Ore, Bar, Pickaxe, Axe, and Hammer
-- Introduced "Nightmare's Wings", which allows the wearer to fly for up to 60 seconds
-- Introduced "Farozite" and "Celestium" wings, which have shorter flight times  
-
-17/07/19 | Ver. 0.1.15:
-- Introduced Celestium Pickaxe and Celestium Hamaxe  
-
-16/07/19 | Ver. 0.1.14:
-- Added mod icon!
-- Introduced Celestium Ore and Celestium Bar (Celestium armor set coming soon)
-- Introduced tools for the three original ores (Nightmarium Pickaxe, Nightmarium Hamaxe, Farozite Pickaxe, Farozite Hamaxe, Pyronium Pickaxe Axe, and Pyronium Hammer)  
-
-15/07/19
-- Mod published on tModLoader!
-Ver: 0.1.13:
-- Changed all instances of Flarium to Pyronium (Including in the description)
-- Introduced Nightmarium, Pyronium, and Farozite bars, which craft the corresponding armor sets now.
-- Introduced the "Pyromania", which will soon inflict a strong fire debuff.
-- Used the post on TCF as the homepage for the mod.  
-
-14/07/19 | Ver. 0.1.12:
-- Introduced Nightmarium, Pyronium, and Farozite brick (Walls coming soon!)
-- Introduced Pyronium armor
-- Changed the names of Farozite, Pyronium, and Nightmarium to have "Ore" at the end.  
-
-13/07/19 | Ver 0.1.11:
-- Introduced Nightmarium and Farozite armor, both of which will do a lot of things down the line. (Flarium armor coming soon!)  
-
-12/07/19 | Ver 0.1.10:
-- Introduced the "Laberd", "Royalty", "Repummel", and "Shrike", all of which are simple blades that will be obtained various different ways. (Many more coming soon!)  
-
-10/07/19 | Ver. 0.1.9:
-- Introduced "Star Mania", which is a W.I.P weapon.  
-
-08/07/19 | Ver. 0.1.8: 
-- Introduced "Flarium", "Nightmarium", and "Farozium", which are all W.I.P. ores that I plan on using for many things in the future.  
-
-30/06/19 | Ver. 0.1.7: 
-- Introduced the "Wooden Bat" and the "Baseball", which are both very early game items that do little damage. 
-- Removed the "Blaster Blade".   
-
-Ver. 0.1.6: 
-- Introduced the "Something" as well as the "Blaster Blade" (Both since removed)
-- Corona changed completely.   
-
-Ver. 0.1.5: 
-- Introduced the "Corona" (Again, W.I.P.) 
-- Fixed the projectile for the "Nightmare" to point in the direction it is shot out in.  
-
-Ver. 0.1.4: 
-- Introduced the "Bloodbath" (W.I.P.)  
-
-Ver. 0.1.3: 
-- Introduced the "Dreadstorm" (W.I.P.)  
-
-Ver. 0.1.2: 
-- Introduced the "Fire Hatchet" (W.I.P.)  
-
-Ver. 0.1.1: 
-- Introduced the "Nightmare" (W.I.P.)  
-
-Ver. 0.1.0: 
-- Mod created; Welcome to the beginning!  
+SPECIAL THANKS:
+GabeHasWon and KingMatt274, for their posts on Worldgen (https://forums.terraria.org/index.php?threads/modding-tutorial-world-generation.47601/) (https://forums.terraria.org/index.php?threads/world-gen-tutorial.50026/)
+Jopojelly, for helping solve many issues with the code
+TOMKA, Pro, and Spark, for pointing out numerous bugs and unnoticed issues.
