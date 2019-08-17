@@ -48,7 +48,14 @@
   <ItemGroup>
     <Content Include="build.txt" />
     <Content Include="description.txt" />
+ Nightmare's-Temp-Stuff
+    <Content Include="Dusts\ArrowThingDust.png" />
+    <Content Include="Dusts\ArrowThingDust2.png" />
     <Content Include="Dusts\CoronaDust.png" />
+    <Content Include="Dusts\NightmareDust.png" />
+
+    <Content Include="Dusts\CoronaDust.png" />
+ master
     <Content Include="Dusts\NightmariumDust.png" />
     <Content Include="icon.png" />
     <Content Include="Items\Accessories\Wings\CelestiumWings.png" />
@@ -60,6 +67,17 @@
     <Content Include="Items\Ammo\Arrows\NightmariumArrow.png" />
     <Content Include="Items\Ammo\Arrows\SpectralArrow.png" />
     <Content Include="Items\Ammo\Bullets\NightmariumBullet.png" />
+ Nightmare's-Temp-Stuff
+    <Content Include="Items\Armor\CelestiumArmor\CelestiumChestplate.png" />
+    <Content Include="Items\Armor\CelestiumArmor\CelestiumChestplate_Arms.png" />
+    <Content Include="Items\Armor\CelestiumArmor\CelestiumChestplate_Body.png" />
+    <Content Include="Items\Armor\CelestiumArmor\CelestiumChestplate_BodyFemale.png" />
+    <Content Include="Items\Armor\CelestiumArmor\CelestiumGreaves.png" />
+    <Content Include="Items\Armor\CelestiumArmor\CelestiumGreaves_Legs.png" />
+    <Content Include="Items\Armor\CelestiumArmor\CelestiumHelm.png" />
+    <Content Include="Items\Armor\CelestiumArmor\CelestiumHelm_Head.png" />
+
+ master
     <Content Include="Items\Armor\FaroziteArmor\FaroziteChestplate.png" />
     <Content Include="Items\Armor\FaroziteArmor\FaroziteChestplate_Arms.png" />
     <Content Include="Items\Armor\FaroziteArmor\FaroziteChestplate_Body.png" />
@@ -120,7 +138,6 @@
     <Content Include="Items\Weapons\Melee\FireHatchet.png" />
     <Content Include="Items\Weapons\Melee\Laberd.png" />
     <Content Include="Items\Weapons\Melee\Pyromania.png" />
-    <Content Include="Items\Weapons\Melee\Repummel.png" />
     <Content Include="Items\Weapons\Melee\Royalty.png" />
     <Content Include="Items\Weapons\Melee\Shatter.png" />
     <Content Include="Items\Weapons\Melee\Shrike.png" />
@@ -137,6 +154,7 @@
     <Content Include="Projectiles\BloodbathProjectile.png" />
     <Content Include="Projectiles\CoronaProjectile.png" />
     <Content Include="Projectiles\DreadstormCloud.png" />
+    <Content Include="Projectiles\NightmareArrow.png" />
     <Content Include="Projectiles\NightmareBolt.png" />
     <Content Include="Projectiles\NightmareProjectile.png" />
     <Content Include="Projectiles\NightmariumArrowProjectile.png" />
@@ -154,7 +172,13 @@
     <Content Include="Tiles\Ores\PyroniumOreTile.png" />
   </ItemGroup>
   <ItemGroup>
+ Nightmare's-Temp-Stuff
+    <Compile Include="Dusts\ArrowThingDust.cs" />
+    <Compile Include="Dusts\ArrowThingDust2.cs" />
     <Compile Include="Dusts\CoronaDust.cs" />
+    <Compile Include="Dusts\NightmareDust.cs" />
+=======    <Compile Include="Dusts\CoronaDust.cs" />
+ master
     <Compile Include="Dusts\NightmariumDust.cs" />
     <Compile Include="Items\Accessories\Wings\CelestiumWings.cs" />
     <Compile Include="Items\Accessories\Wings\FaroziteWings.cs" />
@@ -162,6 +186,12 @@
     <Compile Include="Items\Ammo\Arrows\NightmariumArrow.cs" />
     <Compile Include="Items\Ammo\Arrows\SpectralArrow.cs" />
     <Compile Include="Items\Ammo\Bullets\NightmariumBullet.cs" />
+ Nightmare's-Temp-Stuff
+    <Compile Include="Items\Armor\CelestiumArmor\CelestiumChestplate.cs" />
+    <Compile Include="Items\Armor\CelestiumArmor\CelestiumGreaves.cs" />
+    <Compile Include="Items\Armor\CelestiumArmor\CelestiumHelm.cs" />
+
+master
     <Compile Include="Items\Armor\FaroziteArmor\FaroziteChestplate.cs" />
     <Compile Include="Items\Armor\FaroziteArmor\FaroziteHelmet.cs" />
     <Compile Include="Items\Armor\FaroziteArmor\FaroziteLeggings.cs" />
@@ -209,7 +239,6 @@
     <Compile Include="Items\Weapons\Melee\Shatter.cs" />
     <Compile Include="Items\Weapons\Melee\Shrike.cs" />
     <Compile Include="Items\Weapons\Melee\Laberd.cs" />
-    <Compile Include="Items\Weapons\Melee\Repummel.cs" />
     <Compile Include="Items\Weapons\Melee\Soulrapier.cs" />
     <Compile Include="Items\Weapons\Melee\Royalty.cs" />
     <Compile Include="Items\Weapons\Melee\Spectrum.cs" />
@@ -219,11 +248,16 @@
     <Compile Include="Items\Weapons\Ranged\Faroling.cs" />
     <Compile Include="Items\Weapons\Ranged\Flameburst.cs" />
     <Compile Include="Items\Weapons\Ranged\Nightwind.cs" />
+ Nightmare's-Temp-Stuff
+    <Compile Include="NightmareWorld.cs" />
+======= master
     <Compile Include="NightmaresMod.cs" />
+    <Compile Include="NPCs\GlobalNPC.cs" />
     <Compile Include="Projectiles\BaseballProjectile.cs" />
     <Compile Include="Projectiles\BloodbathProjectile.cs" />
     <Compile Include="Projectiles\CoronaProjectile.cs" />
     <Compile Include="Projectiles\DreadstormCloud.cs" />
+    <Compile Include="Projectiles\NightmareArrow.cs" />
     <Compile Include="Projectiles\NightmareBolt.cs" />
     <Compile Include="Projectiles\NightmareProjectile.cs" />
     <Compile Include="Projectiles\NightmariumBulletProjectile.cs" />
@@ -257,7 +291,10 @@
     <Folder Include="bin\Debug\" />
     <Folder Include="bin\Release\" />
     <Folder Include="BuffsandDebuffs\" />
+ Nightmare's-Temp-Stuff
+
     <Folder Include="Items\Armor\CelestiumArmor\" />
+ master
     <Folder Include="Items\Armor\RedtideArmor\" />
     <Folder Include="Items\Potions\" />
     <Folder Include="NPCs\Bosses\" />

@@ -1,5 +1,9 @@
 author = Nightmare
+ Nightmare's-Temp-Stuff
+version = 0.2.9
+=======
 version = 0.2.1
+ master
 displayName = Nightmare's TMod
 homepage = https://forums.terraria.org/index.php?threads/my-w-i-p-mod-nightmares-tmod-is-now-on-tmodloader.81324/#post-1791257
 

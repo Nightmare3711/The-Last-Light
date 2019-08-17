@@ -1,5 +1,29 @@
 This is a Work In Progress (W.I.P.) mod created by me, [c/460da2: Nightmare3711], that adds a bunch of fun stuff to Terraria.
 
+ Nightmare's-Temp-Stuff
+- - - INFO - - -
+Discord: https://discord.gg/TSWGjUc
+Trello Board: https://trello.com/b/kHQcmS5F/nightmares-tmod
+Terraria Community Forums Post: https://forums.terraria.org/index.php?threads/my-w-i-p-mod-nightmares-tmod-is-now-on-tmodloader.81324/
+
+
+
+Latest update:  
+
+15/08/19 | Ver. 0.2.10:
+- Fixed the color of Farozite on the map
+- Introduced Redtide Brick
+- Changed the texture of every ore brick except Nightmarium
+- Introduced "Celestium Blade"
+- Changed the texture of the "Pyrotome" as well as various tools.
+- Fixed/adjusted many of the recipes so that they make more sense.
+- Squashed a few smaller bugs with a book.
+
+SPECIAL THANKS:
+GabeHasWon and KingMatt274, for their posts on Worldgen (https://forums.terraria.org/index.php?threads/modding-tutorial-world-generation.47601/) (https://forums.terraria.org/index.php?threads/world-gen-tutorial.50026/)
+Jopojelly, for helping solve many issues with the code
+TOMKA, Pro, and Spark, for pointing out numerous bugs and unnoticed issues.
+
 You can contact me on Discord using my ID "Nightmare3711#9544" or through my server at https://discord.gg/Rb62Cvz
 
 You can also contact me through Reddit by using my ID "u/NightmarePhoenix2017" or through my subreddit at https://www.reddit.com/r/CelticEntertainment/
@@ -26,3 +50,4 @@ Last three updates:
 - Made the Nightmarium armor protect against almost every debuff
 - Made the Farozite and Pyronium armor sets immune to certain debuffs
 
+ master
