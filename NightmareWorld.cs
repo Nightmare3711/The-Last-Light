@@ -14,7 +14,11 @@ namespace NightmaresMod
     public class NightmareWorld : ModWorld
     {
 
+ Nightmare's-Temp-Stuff
         /*public override void ModifyWorldGenTasks(List<GenPass> tasks, ref float totalWeight)
+
+        public override void ModifyWorldGenTasks(List<GenPass> tasks, ref float totalWeight)
+ master
         {
             int genIndex = tasks.FindIndex(genpass => genpass.Name.Equals("Shinies"));
             if (genIndex == -1)
@@ -32,6 +36,7 @@ namespace NightmaresMod
                     WorldGen.TileRunner(X, Y, 500, WorldGen.genRand.Next(2000, 2500), TileType, false, 0f, 0f, true, true);
                 }
             }));
+ Nightmare's-Temp-Stuff
         }*/
 
         public override void ModifyWorldGenTasks(List<GenPass> tasks, ref float totalWeight)
@@ -137,3 +142,8 @@ namespace NightmaresMod
         }
     }
 }
+
+        }
+    }
+}
+ master
