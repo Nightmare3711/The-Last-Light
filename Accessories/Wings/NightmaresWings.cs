@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace NightmaresMod.Items.Accessories.Wings
+namespace NightmaresModContent.Items.Accessories.Wings
 {
     [AutoloadEquip(EquipType.Wings)]
 
@@ -44,7 +44,7 @@ namespace NightmaresMod.Items.Accessories.Wings
         public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.ItemType("NightmariumBar"), 16);
+			recipe.AddIngredient(ItemType("NightmariumBar"), 16);
             recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

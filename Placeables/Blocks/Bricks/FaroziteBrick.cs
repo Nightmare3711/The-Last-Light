@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace NightmaresMod.Items.Placeables.Blocks.Bricks
+namespace NightmaresModContent.Items.Placeables.Blocks.Bricks
 {
     public class FaroziteBrick : ModItem
     {
@@ -32,7 +32,7 @@ namespace NightmaresMod.Items.Placeables.Blocks.Bricks
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(mod.ItemType("FaroziteBar"), 10);
+            recipe.AddIngredient(ModContent.ItemType("FaroziteBar"), 10);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this, 25);
             recipe.AddRecipe();

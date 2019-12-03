@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace NightmaresMod.Items.Materials.Bars
+namespace NightmaresModContent.Items.Materials.Bars
 {
     public class RedtideBar : ModItem
     {
@@ -32,7 +32,7 @@ namespace NightmaresMod.Items.Materials.Bars
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(mod.ItemType("RedtideOre"), 2);
+            recipe.AddIngredient(ModContent.ItemType("RedtideOre"), 2);
             recipe.AddTile(412);
             recipe.SetResult(this);
             recipe.AddRecipe();

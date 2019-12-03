@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace NightmaresMod.Items.Materials.Bars
+namespace NightmaresModContent.Items.Materials.Bars
 {
     public class CelestiumBar : ModItem
     {
@@ -34,7 +34,7 @@ namespace NightmaresMod.Items.Materials.Bars
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(mod.ItemType("CelestiumOre"), 4);
+            recipe.AddIngredient(ModContent.ItemType("CelestiumOre"), 4);
             recipe.AddTile(412);
             recipe.SetResult(this);
             recipe.AddRecipe();

@@ -4,13 +4,13 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace NightmaresMod.Items.Ammo.Arrows
+namespace NightmaresModContent.Items.Ammo.Arrows
 {
 	public class NightmariumArrow : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("NightmariumArrow");
+			DisplayName.SetDefault("Nightmarium Arrow");
 			Tooltip.SetDefault("'Rips your foes asunder'");
 		}
 		public override void SetDefaults()
@@ -31,7 +31,7 @@ namespace NightmaresMod.Items.Ammo.Arrows
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.ItemType("NightmariumBar"), 2);
+			recipe.AddIngredient(ModContent.ItemType("NightmariumBar"), 2);
             recipe.AddIngredient(ItemID.Wood, 3);
             recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this, 9);

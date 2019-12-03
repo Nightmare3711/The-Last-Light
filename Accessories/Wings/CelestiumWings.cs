@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace NightmaresMod.Items.Accessories.Wings
+namespace NightmaresModContent.Items.Accessories.Wings
 {
     [AutoloadEquip(EquipType.Wings)]
 
@@ -11,7 +11,7 @@ namespace NightmaresMod.Items.Accessories.Wings
 	{
         public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Celestium Wings");
+			DisplayName.SetDefault("Celestial Ohm");
 			Tooltip.SetDefault("Allows for flight and slow fall");
 		}
 
@@ -45,7 +45,7 @@ namespace NightmaresMod.Items.Accessories.Wings
         public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.ItemType("CelestiumBar"), 16);
+			recipe.AddIngredient(ModContent.ItemType("CelestiumBar"), 16);
             recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
@@ -65,6 +65,11 @@ ref float maxCanAscendMultiplier, ref float maxAscentMultiplier, ref float const
         {
             speed = 20f;
             acceleration *= 2.5f;
+        }
+
+        public override void DrawArmorColor(Player drawPlayer, float shadow, ref Color color, ref int glowMask, ref Color glowMaskColor)
+        {
+            color = drawPlayer.GetImmuneAlphaPure(Color.White, shadow);
         }
     }
 }

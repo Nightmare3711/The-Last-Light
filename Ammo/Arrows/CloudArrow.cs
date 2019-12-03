@@ -2,39 +2,38 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
-namespace NightmaresModContent.Items.Ammo.Arrows
+namespace NightmaresMod.Items.Ammo.Arrows
 {
-	public class SpectralArrow : ModItem
+	public class CloudArrow : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Spectral Arrow");
-			Tooltip.SetDefault("'Brings the power of light upon your foes'");
+			DisplayName.SetDefault("Cloud Arrow");
+			Tooltip.SetDefault("'Light as a cloud'");
 		}
 		public override void SetDefaults()
 		{
-			item.damage = 17;
-            item.crit = 2;
+			item.damage = 50;
+            item.crit = 7;
 			item.ranged = true;
-			item.knockBack = 1.3f;
+			item.knockBack = 5f;
 			item.value = 2000; //20 Silver
 			item.rare = 0; //Grey Rarity
-			item.UseSound = SoundID.Item1;
-			item.autoReuse = false;
-            item.scale = 1f;
             item.maxStack = 999;
             item.ammo = AmmoID.Arrow;
-            item.shoot = mod.ProjectileType("SpectralArrowProjectile");
-            item.shootSpeed = 8.5f;
+            item.shoot = mod.ProjectileType("CloudArrowProjectile");
+            item.shootSpeed = 20f;
             item.consumable = true;
 		}
 
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.RainbowBrick, 2);
-            recipe.AddIngredient(ItemID.WoodenArrow, 9);
+			recipe.AddIngredient(mod.ItemType("Arrow"), 9);
+            recipe.AddIngredient(ItemID.SoulofFlight, 1);
+            recipe.AddIngredient(ItemID.Cloud, 5);
             recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this, 9);
 			recipe.AddRecipe();

@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace NightmaresMod.Items.Armor.NightmariumArmor
+namespace NightmaresModContent.Items.Armor.NightmariumArmor
 {
     [AutoloadEquip(EquipType.Legs)]
 
@@ -60,7 +60,7 @@ namespace NightmaresMod.Items.Armor.NightmariumArmor
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.ItemType("NightmariumBar"), 12);
+			recipe.AddIngredient(ModContent.ItemType("NightmariumBar"), 12);
             recipe.AddTile(412);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

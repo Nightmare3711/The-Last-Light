@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace NightmaresMod.Items.Armor.CelestiumArmor
+namespace NightmaresModContent.Items.Armor.CelestiumArmor
 {
     [AutoloadEquip(EquipType.Body)]
 
@@ -31,7 +31,7 @@ namespace NightmaresMod.Items.Armor.CelestiumArmor
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.ItemType("CelestiumBar"), 7);
+			recipe.AddIngredient(ModContent.ItemType("CelestiumBar"), 7);
             recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
