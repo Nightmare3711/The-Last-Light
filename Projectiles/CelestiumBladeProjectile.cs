@@ -33,19 +33,21 @@ namespace NightmaresMod.Projectiles
 
             if (projectile.alpha > 70)
             {
-                projectile.alpha -= 15;
+                projectile.alpha -= 50;
                 if (projectile.alpha < 70)
                 {
                     projectile.alpha = 70;
                 }
             }
+
             if (projectile.localAI[0] == 0f)
             {
                 AdjustMagnitude(ref projectile.velocity);
                 projectile.localAI[0] = 5f;
             }
+
             Vector2 move = Vector2.Zero;
-            float distance = 400f;
+            float distance = 1000f;
             bool target = false;
             for (int k = 0; k < 200; k++)
             {
@@ -55,18 +57,20 @@ namespace NightmaresMod.Projectiles
                     float distanceTo = (float)Math.Sqrt(newMove.X * newMove.X + newMove.Y * newMove.Y);
                     if (distanceTo < distance)
                     {
-                        move = newMove;
-                        distance = distanceTo;
+                        move = newMove * 200;
+                        distance = distanceTo / 200;
                         target = true;
                     }
                 }
             }
+
             if (target)
             {
                 AdjustMagnitude(ref move);
-                projectile.velocity = (10 * projectile.velocity + move) / 6f;
+                projectile.velocity = (10 * projectile.velocity + move) / 2f;
                 AdjustMagnitude(ref projectile.velocity);
             }
+
             if (projectile.alpha <= 100)
             {
                 int dust = Dust.NewDust(projectile.position, projectile.width, projectile.height, mod.DustType("CelestiumBladeDust"));

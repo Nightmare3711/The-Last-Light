@@ -13,8 +13,8 @@ namespace NightmaresMod.Projectiles
         }
         public override void SetDefaults()
         {
-            projectile.width = 10;
-            projectile.height = 10;
+            projectile.width = 28;
+            projectile.height = 28;
             projectile.aiStyle = 27;
             projectile.friendly = true;
             projectile.melee = true;

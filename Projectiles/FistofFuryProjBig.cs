@@ -6,11 +6,11 @@ using System.Collections.Generic;
 
 namespace NightmaresMod.Projectiles
 {
-    public class NightmareArrow : ModProjectile
+    public class FistofFuryProjBig : ModProjectile
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Nightmare Arrow");
+            DisplayName.SetDefault("Fist of Fury");
         }
         public override void SetDefaults()
         {
@@ -18,7 +18,7 @@ namespace NightmaresMod.Projectiles
             projectile.height = 20;
             projectile.aiStyle = 1;
             projectile.friendly = true;
-            projectile.melee = true;
+            projectile.magic = true;
             projectile.damage = 67;
             projectile.tileCollide = true;
             projectile.penetrate = -1;
@@ -26,6 +26,7 @@ namespace NightmaresMod.Projectiles
             projectile.scale = 1.2f;
             projectile.arrow = true;
             projectile.alpha = 150;
+            projectile.timeLeft = 20;
         }
 
         //When projectile hits the ground, drop the item version
@@ -44,10 +45,10 @@ namespace NightmaresMod.Projectiles
             projectile.velocity.Y += projectile.ai[1];
             if (Main.rand.NextBool(3))
             {
-                Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("NightmareDust"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
+                Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("FistofFuryDust"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
             }
 
-            Lighting.AddLight(projectile.Center, 2.4f, .4f, 4f);
+            Lighting.AddLight(projectile.Center, 1.2f, 2f, 1.2f);
         }
 
         public override void Kill(int timeLeft)
@@ -60,7 +61,7 @@ namespace NightmaresMod.Projectiles
 
             for (int i = 0; i < 20; i++)
             {
-                Dust dust = Dust.NewDustDirect(usePos, projectile.width, projectile.height, mod.DustType("NightmariumArrowDust")); //Create new dust
+                Dust dust = Dust.NewDustDirect(usePos, projectile.width, projectile.height, mod.DustType("FistofFuryDust")); //Create new dust
                 dust.position = (dust.position + projectile.Center) / 2f;
                 dust.velocity += rotVector * 2f;
                 dust.velocity *= 2f;
