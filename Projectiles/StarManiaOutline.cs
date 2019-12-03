@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework;
 
 namespace NightmaresMod.Projectiles
 {
-    public class StarManiaProjectile : ModProjectile
+    public class StarManiaOutline : ModProjectile
     {
         public override void SetStaticDefaults()
         {
@@ -22,16 +22,27 @@ namespace NightmaresMod.Projectiles
             //projectile.friendly = true;
             //projectile.melee = true;
             //projectile.damage = 930;
-            projectile.tileCollide = false;
+            //projectile.tileCollide = false;
             //projectile.timeLeft = 300;
-            projectile.penetrate = -1;
+            //projectile.penetrate = -1;
             //projectile.alpha = 50;
             //projectile.light = 1.7f;
-
-            projectile.CloneDefaults(ProjectileID.Starfury);
-            aiType = ProjectileID.Starfury;
+            projectile.scale = 1.2f;
+            
+            projectile.CloneDefaults(ProjectileID.StarWrath);
+            aiType = ProjectileID.StarWrath;
 
             projectile.alpha = 50;
+        }
+
+        public override void Kill(int timeLeft)
+        {
+            base.Kill(timeLeft);
+        }
+
+        public override void AI()
+        {
+            Lighting.AddLight(projectile.Center, 1.2f, .7f, .7f);
         }
     }
 }

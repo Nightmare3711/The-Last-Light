@@ -35,7 +35,7 @@ namespace NightmaresMod.Projectiles
         {
             if(projectile.owner == Main.myPlayer)
             {
-                int item = Main.rand.NextBool(5) ? Item.NewItem[projectile.getRect[mod.ItemType("SpectralArrow")]] : 0;
+                int item = Main.rand.NextBool(5) ? Item.NewItem[projectile.getRect[ModContent.ItemType("SpectralArrow")]] : 0;
             }
         }
         */
