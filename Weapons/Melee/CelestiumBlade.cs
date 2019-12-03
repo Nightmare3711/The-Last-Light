@@ -3,13 +3,13 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace NightmaresMod.Items.Weapons.Melee
+namespace NightmaresModContent.Items.Weapons.Melee
 {
 	public class CelestiumBlade : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("CelestiumBlade");
+			DisplayName.SetDefault("Celestium Blade");
 			Tooltip.SetDefault("The blade of a powerful celestial");
 		}
 		public override void SetDefaults()
@@ -36,7 +36,7 @@ namespace NightmaresMod.Items.Weapons.Melee
         {
             if (Main.rand.Next(3) == 0)
             {
-                int dust = Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, mod.DustType("NightmariumDust"));
+                int dust = Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, mod.DustType("CelestiumDust"));
             }
         }
 
@@ -50,7 +50,7 @@ namespace NightmaresMod.Items.Weapons.Melee
             //recipe.AddIngredient(ItemID.Meowmere, 1);
             //recipe.AddIngredient(ItemID.StarWrath, 1);
             //recipe.AddIngredient(ItemID.DD2SquireBetsySword, 1);
-            recipe.AddIngredient(mod.ItemType("CelestiumBar"), 13);
+            recipe.AddIngredient(ModContent.ItemType("CelestiumBar"), 13);
             recipe.AddTile(412);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

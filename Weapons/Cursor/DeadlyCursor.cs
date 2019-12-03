@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace NightmaresMod.Items.Weapons.Cursor
+namespace NightmaresModContent.Items.Weapons.Cursor
 {
 	public class DeadlyCursor : ModItem
 	{
@@ -35,7 +35,7 @@ namespace NightmaresMod.Items.Weapons.Cursor
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(mod.ItemType("NightmariumBar"), 23);
+            recipe.AddIngredient(ModContent.ItemType("NightmariumBar"), 23);
             recipe.AddTile(412);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

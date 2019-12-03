@@ -34,7 +34,7 @@ namespace NightmaresMod.Projectiles
                 // Drop a javelin item, 1 in 10 chance (~10% chance)
                 int item =
                 Main.rand.Next(10) == 0
-                    ? Item.NewItem((int)projectile.position.X, (int)projectile.position.Y, projectile.width, projectile.height, mod.ItemType<Items.Weapons.Ranged.Baseball>())
+                    ? Item.NewItem((int)projectile.position.X, (int)projectile.position.Y, projectile.width, projectile.height, ItemType<Items.Weapons.Ranged.Baseball>())
                     : 0;
 
                 // Sync the drop for multiplayer

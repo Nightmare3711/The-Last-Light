@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace NightmaresMod.Items.Weapons.Melee
+namespace NightmaresModContent.Items.Weapons.Melee
 {
     public class Corona : ModItem
     {
@@ -34,7 +34,7 @@ namespace NightmaresMod.Items.Weapons.Melee
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.DayBreak, 1);
-            recipe.AddIngredient(mod.ItemType("PyroniumBar"), 13);
+            recipe.AddIngredient(ModContent.ItemType("PyroniumBar"), 13);
             recipe.AddTile(412);
             recipe.SetResult(this);
             recipe.AddRecipe();

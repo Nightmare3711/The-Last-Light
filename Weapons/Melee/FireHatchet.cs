@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace NightmaresMod.Items.Weapons.Melee
+namespace NightmaresModContent.Items.Weapons.Melee
 {
 	public class FireHatchet : ModItem
 	{

@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace NightmaresMod.Items.Weapons.Melee
+namespace NightmaresModContent.Items.Weapons.Melee
 {
 	public class Shatter : ModItem
 	{

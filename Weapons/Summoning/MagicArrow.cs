@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace NightmaresMod.Items.Weapons.Summoning
+namespace NightmaresModContent.Items.Weapons.Summoning
 {
 	public class MagicArrow : ModItem
 	{
@@ -49,7 +49,7 @@ namespace NightmaresMod.Items.Weapons.Summoning
 		public override void AddRecipes()
         {
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.ItemType("NightmariumBar"), 20);
+			recipe.AddIngredient(ItemType("NightmariumBar"), 20);
 			recipe.AddTile(412);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

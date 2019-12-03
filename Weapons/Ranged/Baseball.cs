@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace NightmaresMod.Items.Weapons.Ranged
+namespace NightmaresModContent.Items.Weapons.Ranged
 {
     public class Baseball : ModItem
     {

@@ -11,7 +11,7 @@ namespace NightmaresMod.NPCs
         {
             if (npc.type == NPCID.Zombie)
             {
-                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Baseball"), Main.rand.Next(0, 20)); // Place added drops specific to Frankenstein here
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ModContent.ItemType("Baseball"), Main.rand.Next(0, 20)); // Place added drops specific to Frankenstein here
             }
             // Addtional if statements here if you would like to add drops to other vanilla npc.
         }

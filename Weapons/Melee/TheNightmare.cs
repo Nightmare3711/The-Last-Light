@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace NightmaresMod.Items.Weapons.Melee
+namespace NightmaresModContent.Items.Weapons.Melee
 {
 	public class TheNightmare : ModItem
 	{
@@ -18,8 +18,8 @@ namespace NightmaresMod.Items.Weapons.Melee
 			item.damage = 3711;
             item.crit = 2;
 			item.melee = true;
-			item.width = 20;
-			item.height = 20;
+			item.width = 58;
+			item.height = 58;
 			item.useTime = 20;
 			item.useAnimation = 20;
 			item.useStyle = 1;
@@ -51,7 +51,7 @@ namespace NightmaresMod.Items.Weapons.Melee
             //recipe.AddIngredient(ItemID.Meowmere, 1);
             //recipe.AddIngredient(ItemID.StarWrath, 1);
             //recipe.AddIngredient(ItemID.DD2SquireBetsySword, 1);
-            recipe.AddIngredient(mod.ItemType("NightmariumBar"), 13);
+            recipe.AddIngredient(ModContent.ItemType("NightmariumBar"), 13);
             recipe.AddTile(412);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

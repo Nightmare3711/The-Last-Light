@@ -3,14 +3,14 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace NightmaresMod.Items.Weapons.Magic
+namespace NightmaresModContent.Items.Weapons.Magic
 {
     public class Pyrotome : ModItem
     {
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Pyrotome");
-            Tooltip.SetDefault("'Shoots fireballs'");
+            Tooltip.SetDefault("'Shoots fireballs and whatnot'");
         }
         public override void SetDefaults()
         {

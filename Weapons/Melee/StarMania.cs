@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using System;
 
-namespace NightmaresMod.Items.Weapons.Melee
+namespace NightmaresModContent.Items.Weapons.Melee
 {
 	public class StarMania : ModItem
 	{
@@ -21,7 +21,7 @@ namespace NightmaresMod.Items.Weapons.Melee
 			item.melee = true;
 			item.width = 32;
 			item.height = 32;
-			item.useTime = 20;
+			item.useTime = 15;
 			item.useAnimation = 20;
 			item.useStyle = 1;
 			item.knockBack = 7f;
@@ -32,7 +32,7 @@ namespace NightmaresMod.Items.Weapons.Melee
             item.scale = 1.7f;
             item.shoot = mod.ProjectileType("StarManiaProjectile");
             item.shootSpeed = 30f;
-		}
+        }
 
         /* Fix maybe?
         public override bool Shoot(ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
@@ -78,7 +78,7 @@ namespace NightmaresMod.Items.Weapons.Melee
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
         {
             type = mod.ProjectileType("StarManiaProjectile");
-            int numberProjectiles = 4 + Main.rand.Next(6);  //This defines how many projectiles to shot
+            int numberProjectiles = 5 + Main.rand.Next(5);  //This defines how many projectiles to shot
             for (int index = 0; index < numberProjectiles; ++index)
             {
                 Vector2 vector2_1 = new Vector2((float)((double)player.position.X + (double)player.width * 0.5 + (double)(Main.rand.Next(201) * -player.direction) + ((double)Main.mouseX + (double)Main.screenPosition.X - (double)player.position.X)), (float)((double)player.position.Y + (double)player.height * 0.5 - 600.0));   //this defines the projectile width, direction and position
@@ -92,11 +92,23 @@ namespace NightmaresMod.Items.Weapons.Melee
                 float num15 = item.shootSpeed / num14;
                 float num16 = num12 * num15;
                 float num17 = num13 * num15;
-                float SpeedX = num16 + (float)Main.rand.Next(-40, 41) * 0.02f;  //this defines the projectile X position speed and randomnes
-                float SpeedY = num17 + (float)Main.rand.Next(-40, 41) * 0.02f;  //this defines the projectile Y position speed and randomnes
-                Projectile.NewProjectile(vector2_1.X, vector2_1.Y, SpeedX, SpeedY, type, damage, knockBack, Main.myPlayer, 0.0f, (float)Main.rand.Next(5));
+                float SpeedX = num16 + (float)Main.rand.Next(-40, 41) * 0.005f;  //this defines the projectile X position speed and randomnes
+                float SpeedY = num17 + (float)Main.rand.Next(-40, 41) * 0.005f;  //this defines the projectile Y position speed and randomnes
+
+                Projectile.NewProjectile(vector2_1.X, vector2_1.Y, SpeedX, SpeedY, mod.ProjectileType("StarManiaOutline"), damage, knockBack, Main.myPlayer, 0.0f, (float)Main.rand.Next(5));
+
+                //Projectile.NewProjectile(position.X, position.Y, speedX, speedY, type, damage, knockBack, player.whoAmI, (float)Main.rand.Next(5));
             }
             return false;
+        }
+
+        public override void MeleeEffects(Player player, Rectangle hitbox)
+        {
+            if (Main.rand.NextBool(3))
+            {
+                //Emit dusts when swing the sword
+                Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, mod.DustType("StarManiaSparkle"));
+            }
         }
     }
 }

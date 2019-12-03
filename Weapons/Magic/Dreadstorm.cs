@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace NightmaresMod.Items.Weapons.Magic
+namespace NightmaresModContent.Items.Weapons.Magic
 {
     public class Dreadstorm : ModItem
     {

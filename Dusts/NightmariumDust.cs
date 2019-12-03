@@ -2,6 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
+using System.Collections.Generic;
 
 namespace NightmaresMod.Dusts
 {
@@ -10,7 +11,7 @@ namespace NightmaresMod.Dusts
         public override void OnSpawn(Dust dust)
         {
             dust.noGravity = false;
-            dust.scale = 3f;
+            dust.scale = 2f;
             dust.noLight = false;
         }
 
@@ -18,7 +19,7 @@ namespace NightmaresMod.Dusts
         {
             dust.position += dust.velocity;
             dust.rotation += dust.velocity.X;
-            dust.scale -= 0.3f;
+            dust.scale -= 0.2f;
             if(dust.scale < 0.5f)
             {
                 dust.active = false;

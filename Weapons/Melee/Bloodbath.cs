@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace NightmaresMod.Items.Weapons.Melee
+namespace NightmaresModContent.Items.Weapons.Melee
 {
 	public class Bloodbath : ModItem
 	{
@@ -36,7 +36,7 @@ namespace NightmaresMod.Items.Weapons.Melee
 		{
 			ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.CrimtaneBar, 13);
-            recipe.AddIngredient(mod.ItemType("NightmariumBar"), 1);
+            recipe.AddIngredient(ModContent.ItemType("NightmariumBar"), 1);
             recipe.AddTile(412);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

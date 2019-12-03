@@ -4,19 +4,19 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using System;
 
-namespace NightmaresMod.Items.Weapons.Ranged
+namespace NightmaresModContent.Items.Weapons.Ranged
 {
 	public class Nightwind : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Nightwind");
-			Tooltip.SetDefault("'Turns arrows into dark, shadowed Nightmare arrows'");
+			Tooltip.SetDefault("'Turns arrows into Nightmare arrows'");
 		}
 		public override void SetDefaults()
 		{
 			item.ranged = true;
-            item.damage = 322;
+            item.damage = 422;
 			item.useTime = 20;
 			item.useAnimation = 20;
 			item.useStyle = 5;
@@ -35,7 +35,7 @@ namespace NightmaresMod.Items.Weapons.Ranged
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(mod.ItemType("NightmariumBar"), 12);
+            recipe.AddIngredient(ModContent.ItemType("NightmariumBar"), 12);
             recipe.AddTile(412);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
