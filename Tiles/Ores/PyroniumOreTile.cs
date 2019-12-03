@@ -14,7 +14,7 @@ namespace NightmaresMod.Tiles.Ores
             Main.tileMergeDirt[Type] = true;
             Main.tileLighted[Type] = true;
             Main.tileBlockLight[Type] = true;
-            drop = mod.ItemType("PyroniumOre");
+            drop = ModContent.ItemType("PyroniumOre");
             ModTranslation name = CreateMapEntryName();
             name.SetDefault("PyroniumOre");
             AddMapEntry(new Color(255, 100, 0), name);

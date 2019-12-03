@@ -14,7 +14,7 @@ namespace NightmaresMod.Tiles.Bricks
             Main.tileMergeDirt[Type] = false;
             Main.tileLighted[Type] = true;
             Main.tileBlockLight[Type] = true;
-            drop = mod.ItemType("PyroniumBrick");
+            drop = ModContent.ItemType("PyroniumBrick");
             ModTranslation name = CreateMapEntryName();
             name.SetDefault("Pyronium Brick");
             AddMapEntry(new Color(150, 200, 255), name);

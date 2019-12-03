@@ -14,7 +14,7 @@ namespace NightmaresMod.Tiles.Bricks
             Main.tileMergeDirt[Type] = false;
             Main.tileLighted[Type] = true;
             Main.tileBlockLight[Type] = true;
-            drop = mod.ItemType("FaroziteBrick");
+            drop = ModContent.ItemType("FaroziteBrick");
             ModTranslation name = CreateMapEntryName();
             name.SetDefault("Farozite Brick");
             AddMapEntry(new Color(150, 200, 255), name);

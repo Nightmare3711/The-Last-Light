@@ -14,13 +14,13 @@ namespace NightmaresMod.Tiles.Ores
             Main.tileMergeDirt[Type] = true;
             Main.tileLighted[Type] = true;
             Main.tileBlockLight[Type] = true;
-            drop = mod.ItemType("NightmariumOre");
+            drop = ModContent.ItemType("NightmariumOre");
             minPick = 250;
             dustType = mod.DustType("NightmariumDust");
 
             ModTranslation name = CreateMapEntryName();
             name.SetDefault("Nightmarium Ore");
-            AddMapEntry(new Color(50, 10,100), name);
+            AddMapEntry(new Color(50, 10, 100), name);
         }
 
         public override void ModifyLight(int i, int j, ref float r, ref float g, ref float b)

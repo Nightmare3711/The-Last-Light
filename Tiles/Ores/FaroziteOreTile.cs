@@ -14,7 +14,7 @@ namespace NightmaresMod.Tiles.Ores
             Main.tileMergeDirt[Type] = true;
             Main.tileLighted[Type] = true;
             Main.tileBlockLight[Type] = true;
-            drop = mod.ItemType("FaroziteOre");
+            drop = ModContent.ItemType("FaroziteOre");
             ModTranslation name = CreateMapEntryName();
             name.SetDefault("Farozite Ore");
             AddMapEntry(new Color(150, 200, 255), name);
