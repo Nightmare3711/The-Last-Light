@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace NightmaresMod.Items.Tools
+namespace NightmaresModContent.Items.Tools
 {
 	public class FaroziteHamaxe : ModItem
 	{
@@ -43,7 +43,7 @@ namespace NightmaresMod.Items.Tools
         public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.ItemType("FaroziteBar"), 11);
+			recipe.AddIngredient(ModContent.ItemType("FaroziteBar"), 11);
             recipe.AddTile(412);
 			recipe.SetResult(this);
             recipe.AddRecipe();

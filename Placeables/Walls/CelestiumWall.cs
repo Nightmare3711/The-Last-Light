@@ -1,6 +1,6 @@
 using Terraria.ModLoader;
 
-namespace NightmaresMod.Items.Placeables.Walls
+namespace NightmaresModContent.Items.Placeables.Walls
 {
 	public class CelestiumWall : ModItem
 	{
@@ -23,7 +23,7 @@ namespace NightmaresMod.Items.Placeables.Walls
 
 		/*public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.ItemType("ExampleBlock"));
+			recipe.AddIngredient(ModContent.ItemType("ExampleBlock"));
 			recipe.SetResult(this, 4);
 			recipe.AddRecipe();
 		}*/

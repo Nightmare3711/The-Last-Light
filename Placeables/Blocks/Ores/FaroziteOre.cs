@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace NightmaresMod.Items.Placeables.Blocks.Ores
+namespace NightmaresModContent.Items.Placeables.Blocks.Ores
 {
     public class FaroziteOre : ModItem
     {
